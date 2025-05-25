@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Bem-vindo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .top-left {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-left" id="saudacao"></div>
+    <h1>Seja Bem-vindo</h1>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const nome = params.get("nome");
+        if (nome) {
+            document.getElementById("saudacao").textContent = `Olá, ${nome}`;
+        }
+    </script>
+</body>
+</html>

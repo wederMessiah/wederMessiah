@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Criar Conta</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background-color: #f2f2f2;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        width: 100%;
+        background: linear-gradient(90deg, #007bff, #0056b3);
+        padding: 36px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+      }
+
+      .logo h1 {
+        color: #fff;
+        text-transform: uppercase;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background 0.3s;
+      }
+
+      nav ul li a:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+
+      .form-container {
+        background-color: #fff;
+        padding: 30px 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        text-align: center;
+        max-width: 400px;
+        width: 100%;
+      }
+
+      .form-container legend {
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin-top: 10px;
+        text-align: left;
+      }
+
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        box-sizing: border-box;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 10px;
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>GovVacinas</h1>
+      </div>
+        <nav>
+      <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="Criar_Login.html">Cadastro</a></li>  
+          <li><a href="cadastro.html">Entrar</a></li>
+      </ul>
+</nav>
+    </header>
+
+    <div class="content">
+      <form class="form-container" name="form1" method="post" action="grava.jsp">
+        <fieldset style="border: none">
+          <legend>Criar Acesso</legend>
+
+          <label for="txtnome">Nome:</label>
+          <input type="text" name="txtnome" id="txtnome" />
+
+          <label for="txtsenha">Senha:</label>
+          <input type="password" name="txtsenha" id="txtsenha" />
+
+          <label for="txtemail">Email:</label>
+          <input type="email" name="txtemail" id="txtemail" />
+
+          <button type="submit">Criar Conta</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
