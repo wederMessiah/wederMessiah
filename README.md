@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-<!--
+<!--I'm a Systems Analysis student currently doing an internship where I’m gaining hands-on experience in software development and problem-solving. Passionate about tech, I’m always eager to learn and grow my skills in programming and system design.
 **wederMessiah/wederMessiah** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
